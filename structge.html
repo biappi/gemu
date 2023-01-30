@@ -32,6 +32,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -51,61 +52,90 @@
 </div><!--header-->
 <div class="contents">
 
+<p>The entire state of the emulated system, including registers, memory, peripherals and timings.  
+ <a href="structge.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ge_8h_source.html">ge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:abdea65fa3e63b77a57b773b1e878db71"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="ge_8h.html#af761a67e9d7ce9e23381088b6f2ae893">clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#abdea65fa3e63b77a57b773b1e878db71">current_clock</a></td></tr>
 <tr class="separator:abdea65fa3e63b77a57b773b1e878db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba60f4e3e1311b8cdc6a5276a367e9a2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aba60f4e3e1311b8cdc6a5276a367e9a2">ticks</a></td></tr>
-<tr class="separator:aba60f4e3e1311b8cdc6a5276a367e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fcbdec563a8d3d944b4c591190ad53a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a4fcbdec563a8d3d944b4c591190ad53a">halted</a></td></tr>
 <tr class="separator:a4fcbdec563a8d3d944b4c591190ad53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0650b0b5d0728302f0399057877d3958"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a0650b0b5d0728302f0399057877d3958">old_SO</a></td></tr>
+<tr class="memdesc:a0650b0b5d0728302f0399057877d3958"><td class="mdescLeft">&#160;</td><td class="mdescRight">SO at the start of the pulse.  <a href="structge.html#a0650b0b5d0728302f0399057877d3958">More...</a><br /></td></tr>
+<tr class="separator:a0650b0b5d0728302f0399057877d3958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fcffd0006596e6903b64ad94d76ee68"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpulse__event.html">pulse_event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a5fcffd0006596e6903b64ad94d76ee68">on_pulse</a> [END_OF_STATUS]</td></tr>
 <tr class="separator:a5fcffd0006596e6903b64ad94d76ee68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3280403cac4e527aa89fceda12634ab0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a3280403cac4e527aa89fceda12634ab0">rPO</a></td></tr>
+<tr class="memdesc:a3280403cac4e527aa89fceda12634ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program addresser.  <a href="structge.html#a3280403cac4e527aa89fceda12634ab0">More...</a><br /></td></tr>
 <tr class="separator:a3280403cac4e527aa89fceda12634ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a74d1ad5135d64f4fc3b98e2c2a486f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a4a74d1ad5135d64f4fc3b98e2c2a486f">rV1</a></td></tr>
+<tr class="memdesc:a4a74d1ad5135d64f4fc3b98e2c2a486f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addresser for the first operand.  <a href="structge.html#a4a74d1ad5135d64f4fc3b98e2c2a486f">More...</a><br /></td></tr>
 <tr class="separator:a4a74d1ad5135d64f4fc3b98e2c2a486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e9841f25bbdaae6ebc25708d427be1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aa2e9841f25bbdaae6ebc25708d427be1">rV2</a></td></tr>
+<tr class="memdesc:aa2e9841f25bbdaae6ebc25708d427be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addresser for the second operand.  <a href="structge.html#aa2e9841f25bbdaae6ebc25708d427be1">More...</a><br /></td></tr>
 <tr class="separator:aa2e9841f25bbdaae6ebc25708d427be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f36a99d8084ff6deccf78854ad1a69"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ae6f36a99d8084ff6deccf78854ad1a69">rV3</a></td></tr>
+<tr class="memdesc:ae6f36a99d8084ff6deccf78854ad1a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addresser for external instructions using channel 3.  <a href="structge.html#ae6f36a99d8084ff6deccf78854ad1a69">More...</a><br /></td></tr>
 <tr class="separator:ae6f36a99d8084ff6deccf78854ad1a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ea05e274b3f44197807b562bc8cd9b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a96ea05e274b3f44197807b562bc8cd9b">rV4</a></td></tr>
+<tr class="memdesc:a96ea05e274b3f44197807b562bc8cd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addresser for external instructions using channel 2.  <a href="structge.html#a96ea05e274b3f44197807b562bc8cd9b">More...</a><br /></td></tr>
 <tr class="separator:a96ea05e274b3f44197807b562bc8cd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b7ad0d4e107fc07edfcf5c4532ff45"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a69b7ad0d4e107fc07edfcf5c4532ff45">rRI</a></td></tr>
+<tr class="memdesc:a69b7ad0d4e107fc07edfcf5c4532ff45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Photoprint register 8-bit register used to store the photodisc codes.  <a href="structge.html#a69b7ad0d4e107fc07edfcf5c4532ff45">More...</a><br /></td></tr>
 <tr class="separator:a69b7ad0d4e107fc07edfcf5c4532ff45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b8bbe1fe57b7808a8b2c69e694989a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a97b8bbe1fe57b7808a8b2c69e694989a">rL1</a></td></tr>
+<tr class="memdesc:a97b8bbe1fe57b7808a8b2c69e694989a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the operand.  <a href="structge.html#a97b8bbe1fe57b7808a8b2c69e694989a">More...</a><br /></td></tr>
 <tr class="separator:a97b8bbe1fe57b7808a8b2c69e694989a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7a7583a6cbd363f51aa3284fc7aa49"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a5d7a7583a6cbd363f51aa3284fc7aa49">rL2</a></td></tr>
+<tr class="memdesc:a5d7a7583a6cbd363f51aa3284fc7aa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary register.  <a href="structge.html#a5d7a7583a6cbd363f51aa3284fc7aa49">More...</a><br /></td></tr>
 <tr class="separator:a5d7a7583a6cbd363f51aa3284fc7aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8fdf336a37975398ca405e101a5dd1b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ac8fdf336a37975398ca405e101a5dd1b">rL3</a></td></tr>
+<tr class="memdesc:ac8fdf336a37975398ca405e101a5dd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of operands involving channel 3.  <a href="structge.html#ac8fdf336a37975398ca405e101a5dd1b">More...</a><br /></td></tr>
 <tr class="separator:ac8fdf336a37975398ca405e101a5dd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02664cc2ae25ca613b473312bdc73f8c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a02664cc2ae25ca613b473312bdc73f8c">kNO</a></td></tr>
+<tr class="memdesc:a02664cc2ae25ca613b473312bdc73f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Knot driven by P0, V1, V2, V4, L1, R1, V3 and L3.  <a href="structge.html#a02664cc2ae25ca613b473312bdc73f8c">More...</a><br /></td></tr>
 <tr class="separator:a02664cc2ae25ca613b473312bdc73f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8244d165d311b424c0b13650e3ab192"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ad8244d165d311b424c0b13650e3ab192">kNA</a></td></tr>
+<tr class="memdesc:ad8244d165d311b424c0b13650e3ab192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Knot driven by SO or SI.  <a href="structge.html#ad8244d165d311b424c0b13650e3ab192">More...</a><br /></td></tr>
 <tr class="separator:ad8244d165d311b424c0b13650e3ab192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4554301a3302002db3c569d35d81f61"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ae4554301a3302002db3c569d35d81f61">kNI</a></td></tr>
+<tr class="memdesc:ae4554301a3302002db3c569d35d81f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Knot driven by counting network, or by the UA to store the result of the operation.  <a href="structge.html#ae4554301a3302002db3c569d35d81f61">More...</a><br /></td></tr>
 <tr class="separator:ae4554301a3302002db3c569d35d81f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503e80195756798522c33bde23ce3dcf"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a503e80195756798522c33bde23ce3dcf">rRO</a></td></tr>
+<tr class="memdesc:a503e80195756798522c33bde23ce3dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multipurpose 8+1 bit register.  <a href="structge.html#a503e80195756798522c33bde23ce3dcf">More...</a><br /></td></tr>
 <tr class="separator:a503e80195756798522c33bde23ce3dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab536d084265d8e38ea0e5df3ac0ee770"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ab536d084265d8e38ea0e5df3ac0ee770">rVO</a></td></tr>
+<tr class="memdesc:ab536d084265d8e38ea0e5df3ac0ee770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default memory addresser.  <a href="structge.html#ab536d084265d8e38ea0e5df3ac0ee770">More...</a><br /></td></tr>
 <tr class="separator:ab536d084265d8e38ea0e5df3ac0ee770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4a18b351c9fa2998e889eb45d69efa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a6a4a18b351c9fa2998e889eb45d69efa">rBO</a></td></tr>
+<tr class="memdesc:a6a4a18b351c9fa2998e889eb45d69efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default operator.  <a href="structge.html#a6a4a18b351c9fa2998e889eb45d69efa">More...</a><br /></td></tr>
 <tr class="separator:a6a4a18b351c9fa2998e889eb45d69efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af33f9b7ea280915dec0caff02a6be3da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#af33f9b7ea280915dec0caff02a6be3da">rFO</a></td></tr>
+<tr class="memdesc:af33f9b7ea280915dec0caff02a6be3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current function code.  <a href="structge.html#af33f9b7ea280915dec0caff02a6be3da">More...</a><br /></td></tr>
 <tr class="separator:af33f9b7ea280915dec0caff02a6be3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1d82816d05e49c65310064ef080bd7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a4c1d82816d05e49c65310064ef080bd7">rSO</a></td></tr>
+<tr class="memdesc:a4c1d82816d05e49c65310064ef080bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main sequencer.  <a href="structge.html#a4c1d82816d05e49c65310064ef080bd7">More...</a><br /></td></tr>
 <tr class="separator:a4c1d82816d05e49c65310064ef080bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21499f3a38e7cb016a68146c5042ec5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ab21499f3a38e7cb016a68146c5042ec5">rSI</a></td></tr>
+<tr class="memdesc:ab21499f3a38e7cb016a68146c5042ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral unit sequencer.  <a href="structge.html#ab21499f3a38e7cb016a68146c5042ec5">More...</a><br /></td></tr>
 <tr class="separator:ab21499f3a38e7cb016a68146c5042ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dcfa25755af8e6d6f427a24cb150091"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a9dcfa25755af8e6d6f427a24cb150091">rSA</a></td></tr>
+<tr class="memdesc:a9dcfa25755af8e6d6f427a24cb150091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Future state configuration.  <a href="structge.html#a9dcfa25755af8e6d6f427a24cb150091">More...</a><br /></td></tr>
 <tr class="separator:a9dcfa25755af8e6d6f427a24cb150091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62000a8f80d31a7344d024f7e0b7aa81"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a62000a8f80d31a7344d024f7e0b7aa81">ffFI</a></td></tr>
+<tr class="memdesc:a62000a8f80d31a7344d024f7e0b7aa81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special conditions register 1.  <a href="structge.html#a62000a8f80d31a7344d024f7e0b7aa81">More...</a><br /></td></tr>
 <tr class="separator:a62000a8f80d31a7344d024f7e0b7aa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f15a95b261028d56cfba2d30e33aaa0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a2f15a95b261028d56cfba2d30e33aaa0">ffFA</a></td></tr>
+<tr class="memdesc:a2f15a95b261028d56cfba2d30e33aaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special conditions register 1.  <a href="structge.html#a2f15a95b261028d56cfba2d30e33aaa0">More...</a><br /></td></tr>
 <tr class="separator:a2f15a95b261028d56cfba2d30e33aaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0c9b09deb02333f1091a39dc9b04bd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a0a0c9b09deb02333f1091a39dc9b04bd">rFA</a></td></tr>
+<tr class="memdesc:a0a0c9b09deb02333f1091a39dc9b04bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faults (pp. 139-141)  <a href="structge.html#a0a0c9b09deb02333f1091a39dc9b04bd">More...</a><br /></td></tr>
+<tr class="separator:a0a0c9b09deb02333f1091a39dc9b04bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eee19d022dce2255198ee5752860a77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a1eee19d022dce2255198ee5752860a77">AINI</a>:1</td></tr>
+<tr class="memdesc:a1eee19d022dce2255198ee5752860a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program Loading.  <a href="structge.html#a1eee19d022dce2255198ee5752860a77">More...</a><br /></td></tr>
 <tr class="separator:a1eee19d022dce2255198ee5752860a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cf67d90fac78b0a1e26b54138a48bbf"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a2cf67d90fac78b0a1e26b54138a48bbf">ALTO</a>:1</td></tr>
 <tr class="separator:a2cf67d90fac78b0a1e26b54138a48bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,55 +144,55 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a81253d5250cefe9592818c7081a0ff09"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a81253d5250cefe9592818c7081a0ff09">AVER</a>:1</td></tr>
 <tr class="separator:a81253d5250cefe9592818c7081a0ff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8174d589a5636441f2dc515b6353e0a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aa8174d589a5636441f2dc515b6353e0a">ADIR</a>:1</td></tr>
+<tr class="memdesc:aa8174d589a5636441f2dc515b6353e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable step-by-step (pag. 97)  <a href="structge.html#aa8174d589a5636441f2dc515b6353e0a">More...</a><br /></td></tr>
 <tr class="separator:aa8174d589a5636441f2dc515b6353e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047b1e61a932b091e73939bc90214984"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a047b1e61a932b091e73939bc90214984">RINT</a>:1</td></tr>
 <tr class="separator:a047b1e61a932b091e73939bc90214984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a0c9b09deb02333f1091a39dc9b04bd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a0a0c9b09deb02333f1091a39dc9b04bd">rFA</a></td></tr>
-<tr class="separator:a0a0c9b09deb02333f1091a39dc9b04bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbea2feeac5616d55b118bbad09cae4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#affbea2feeac5616d55b118bbad09cae4">JS1</a>:1</td></tr>
+<tr class="memdesc:affbea2feeac5616d55b118bbad09cae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Console jump condition 1.  <a href="structge.html#affbea2feeac5616d55b118bbad09cae4">More...</a><br /></td></tr>
+<tr class="separator:affbea2feeac5616d55b118bbad09cae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2155e5e6bdc0c75f2bd9a7cfe74908e2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a2155e5e6bdc0c75f2bd9a7cfe74908e2">JS2</a>:1</td></tr>
+<tr class="memdesc:a2155e5e6bdc0c75f2bd9a7cfe74908e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Console jump condition 2.  <a href="structge.html#a2155e5e6bdc0c75f2bd9a7cfe74908e2">More...</a><br /></td></tr>
+<tr class="separator:a2155e5e6bdc0c75f2bd9a7cfe74908e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2dc3b42dd8531a17e17de13f30bdcd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aba2dc3b42dd8531a17e17de13f30bdcd">JE</a>:1</td></tr>
+<tr class="memdesc:aba2dc3b42dd8531a17e17de13f30bdcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">JE/AVER jump instruction exectuted.  <a href="structge.html#aba2dc3b42dd8531a17e17de13f30bdcd">More...</a><br /></td></tr>
+<tr class="separator:aba2dc3b42dd8531a17e17de13f30bdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ff61905bc74ec0de1e125ce99e3655"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a04ff61905bc74ec0de1e125ce99e3655">INTE</a>:1</td></tr>
+<tr class="memdesc:a04ff61905bc74ec0de1e125ce99e3655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interruption present.  <a href="structge.html#a04ff61905bc74ec0de1e125ce99e3655">More...</a><br /></td></tr>
+<tr class="separator:a04ff61905bc74ec0de1e125ce99e3655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bff169ab33851cdd39f25f02f3b82e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a14bff169ab33851cdd39f25f02f3b82e">PUC1</a>:1</td></tr>
+<tr class="memdesc:a14bff169ab33851cdd39f25f02f3b82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 1 busy or CPU waiting.  <a href="structge.html#a14bff169ab33851cdd39f25f02f3b82e">More...</a><br /></td></tr>
+<tr class="separator:a14bff169ab33851cdd39f25f02f3b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6039a03fcb1ed2c273513c258f0b46b0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a6039a03fcb1ed2c273513c258f0b46b0">PUC2</a>:1</td></tr>
+<tr class="memdesc:a6039a03fcb1ed2c273513c258f0b46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 2 busy.  <a href="structge.html#a6039a03fcb1ed2c273513c258f0b46b0">More...</a><br /></td></tr>
+<tr class="separator:a6039a03fcb1ed2c273513c258f0b46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6a606dbbe0d89e9929da6d12fef0b1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a5a6a606dbbe0d89e9929da6d12fef0b1">PUC3</a>:1</td></tr>
+<tr class="memdesc:a5a6a606dbbe0d89e9929da6d12fef0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel 3 busy.  <a href="structge.html#a5a6a606dbbe0d89e9929da6d12fef0b1">More...</a><br /></td></tr>
+<tr class="separator:a5a6a606dbbe0d89e9929da6d12fef0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0324630f2c7a9c7b22a4e5de1e1a266"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ae0324630f2c7a9c7b22a4e5de1e1a266">URPE</a>:1</td></tr>
+<tr class="separator:ae0324630f2c7a9c7b22a4e5de1e1a266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79c9e6f4358eb7f366dc028840c599d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ab79c9e6f4358eb7f366dc028840c599d">URPU</a>:1</td></tr>
+<tr class="separator:ab79c9e6f4358eb7f366dc028840c599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1f404a7705d2eec8e8d12fa2ca7e9d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#abc1f404a7705d2eec8e8d12fa2ca7e9d">step_by_step</a>:1</td></tr>
+<tr class="memdesc:abc1f404a7705d2eec8e8d12fa2ca7e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step by step execution.  <a href="structge.html#abc1f404a7705d2eec8e8d12fa2ca7e9d">More...</a><br /></td></tr>
+<tr class="separator:abc1f404a7705d2eec8e8d12fa2ca7e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2210811ce8873efffaa6e4d3f738055d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a2210811ce8873efffaa6e4d3f738055d">operator_call</a>:1</td></tr>
+<tr class="memdesc:a2210811ce8873efffaa6e4d3f738055d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator call.  <a href="structge.html#a2210811ce8873efffaa6e4d3f738055d">More...</a><br /></td></tr>
+<tr class="separator:a2210811ce8873efffaa6e4d3f738055d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c69e787972fdd3686486854b46d460"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a78c69e787972fdd3686486854b46d460">mem</a> [<a class="el" href="ge_8h.html#a2dcf8c45f945dd0c4301a94700f2112c">MEM_SIZE</a>]</td></tr>
+<tr class="memdesc:a78c69e787972fdd3686486854b46d460"><td class="mdescLeft">&#160;</td><td class="mdescRight">The memory of the emulated system.  <a href="structge.html#a78c69e787972fdd3686486854b46d460">More...</a><br /></td></tr>
+<tr class="separator:a78c69e787972fdd3686486854b46d460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e540d6d7f0081525e0c380064781e13"><td class="memItemLeft" align="right" valign="top">struct ge_console&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a6e540d6d7f0081525e0c380064781e13">console</a></td></tr>
 <tr class="separator:a6e540d6d7f0081525e0c380064781e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51723c7b97ff4771a2ece3539a77bba5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structge__counting__network.html">ge_counting_network</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a51723c7b97ff4771a2ece3539a77bba5">counting_network</a></td></tr>
 <tr class="separator:a51723c7b97ff4771a2ece3539a77bba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78c69e787972fdd3686486854b46d460"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a78c69e787972fdd3686486854b46d460">mem</a> [<a class="el" href="ge_8h.html#a2dcf8c45f945dd0c4301a94700f2112c">MEM_SIZE</a>]</td></tr>
-<tr class="separator:a78c69e787972fdd3686486854b46d460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0588856d80b7ce1fbf435530feed2c08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a0588856d80b7ce1fbf435530feed2c08">step_by_step</a>:1</td></tr>
-<tr class="separator:a0588856d80b7ce1fbf435530feed2c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbb529208cda1466ea675cacad4c1cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a4dbb529208cda1466ea675cacad4c1cd">operator_call</a>:1</td></tr>
-<tr class="separator:a4dbb529208cda1466ea675cacad4c1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a2dec3e4c5ea7b47e8ee1c0fd436e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a49a2dec3e4c5ea7b47e8ee1c0fd436e5">JS1</a>:1</td></tr>
-<tr class="separator:a49a2dec3e4c5ea7b47e8ee1c0fd436e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36719fe5f4715aef85790e331029b994"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a36719fe5f4715aef85790e331029b994">JS2</a>:1</td></tr>
-<tr class="separator:a36719fe5f4715aef85790e331029b994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f2dafc43fb5182942f74252407ad26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a63f2dafc43fb5182942f74252407ad26">JE</a>:1</td></tr>
-<tr class="separator:a63f2dafc43fb5182942f74252407ad26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebf984a8f588670134f7260b217ba72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aaebf984a8f588670134f7260b217ba72">INTE</a>:1</td></tr>
-<tr class="separator:aaebf984a8f588670134f7260b217ba72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af7974ab9f1ac472a780134e474ffd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a8af7974ab9f1ac472a780134e474ffd2">PUC1</a>:1</td></tr>
-<tr class="separator:a8af7974ab9f1ac472a780134e474ffd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686fc0f9a8b247915efa4bfb755ed6e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a686fc0f9a8b247915efa4bfb755ed6e1">PUC2</a>:1</td></tr>
-<tr class="separator:a686fc0f9a8b247915efa4bfb755ed6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaab49f5c8b240da84b483b2f8b87cd26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aaab49f5c8b240da84b483b2f8b87cd26">PUC3</a>:1</td></tr>
-<tr class="separator:aaab49f5c8b240da84b483b2f8b87cd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e720c44868e5d5c939e458a1ff26b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#ad2e720c44868e5d5c939e458a1ff26b8">URPE</a>:1</td></tr>
-<tr class="separator:ad2e720c44868e5d5c939e458a1ff26b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfdfd1ec65f2bebb75830a9c1473332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#a0cfdfd1ec65f2bebb75830a9c1473332">URPU</a>:1</td></tr>
-<tr class="separator:a0cfdfd1ec65f2bebb75830a9c1473332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e99d5e7e9bd26d3e926159445da103"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structge__peri.html">ge_peri</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html#aa8e99d5e7e9bd26d3e926159445da103">peri</a></td></tr>
 <tr class="separator:aa8e99d5e7e9bd26d3e926159445da103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>struct ge</p>
-<p>@rPO: the program address regitster, i.e. the register used to scan the positions of the memory in which the program instructions are recorded. (p.118). @rV1: the addresser for the first operand. @rV2: the addresser for the second operand. @rV3: the addresser for external instructions using channel 3 @rV4: the addresser for external instructions using channel 2 @rRI: 8-bit register used to store the photodisc codes. @rL1: 16-bit used to store the length of the operands or for information in transit @rL2: 8-bit auxiliary register @rL3: 16-bit register containing the length of operands involving channel 3 @rNO: Knot driven by P0, V1, V2, V4, L1, R1, V3 and L3. In addition, the NO knot contains:</p><ul>
-<li>the forcings from program</li>
-<li>the signals of forcing from console (AM switches)</li>
-</ul>
-<p>@rRO: multi-function 8+1 bit register that store the read signal from memory (e.g. the result of transfer command MEM). @rV0: 16-bit register which is loaded in TO20 from NO, used to address memory for read and write operations. @rBO: 16-bit register used to drive the UA (aka ALU) and used to visualize the content of other registers on the operating panel of the console @rNI: Knot driven by counting network, or by the UA to store the result of the operation. UA may store MSB or LSB depending on the operation. @rFO: 8-bit register storing the function code of the instruction being executed.</p>
-<p>@rSO: the main sequencer of the processor. It is used to establish the sequence for all the phases of program loading, fetching (phase alpha), executing (phase beta)</p>
-<p>@rSI: 4-bit sequencer used for data xechange with peripheral units through channel 2</p>
-<p>@rNA: Knot driven by SO or SI. Content is stored to SA.</p>
-<p>@rSA: Register that drives the MLS and the logic to generate future status configuration @ffFI: 7 Flip-Flops containing special conditions which occur during the performance of an instruction. Unloaded in @FA in T010 @ffFA: 7 Flip-Flops containing special conditions which occur during the performance of an instruction. Loaded from @FI in T010 @AINI: FF It as the meaning of "Program Loading". It is set pressing "LOAD" and it is reset pressing "CLEAR" or with command CI39 (E0 status alpha) @ALTO: FF Alto @AVER: FF AVER @ADIR: FF ADIR (disable step-by-step (pag. 97)) @RINT @counting_network: represent the GE counting network @console: represent the GE console </p>
+<div class="textblock"><p>The entire state of the emulated system, including registers, memory, peripherals and timings. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00196">196</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00145">145</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="aa8174d589a5636441f2dc515b6353e0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8174d589a5636441f2dc515b6353e0a">&#9670;&nbsp;</a></span>ADIR</h2>
@@ -176,7 +206,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00259">259</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Disable step-by-step (pag. 97) </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00295">295</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +224,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00255">255</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Program Loading. </p>
+<p>Set by pressing the "LOAD" button of the console, and it is reset by pressing "CLEAR", or with the command CI39 (in the alpha phase of the E0 state). </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00290">290</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +243,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00257">257</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00292">292</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +259,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00256">256</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00291">291</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +275,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00258">258</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00293">293</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +291,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00263">263</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00312">312</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -272,7 +307,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00263">263</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00312">312</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +323,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00136">136</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00137">137</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +339,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00253">253</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Special conditions register 1. </p>
+<p>7 Flip-Flops containing special conditions which occur during the performance of an instruction. Loaded from <a class="el" href="structge.html#a62000a8f80d31a7344d024f7e0b7aa81" title="Special conditions register 1.">ffFI</a> in T010 </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00280">280</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -320,7 +358,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00252">252</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Special conditions register 1. </p>
+<p>7 Flip-Flops containing special conditions which occur during the performance of an instruction. Unloaded in <a class="el" href="structge.html#a2f15a95b261028d56cfba2d30e33aaa0" title="Special conditions register 1.">ffFA</a> in T010 </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00272">272</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -336,71 +377,79 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00200">200</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00148">148</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="aaebf984a8f588670134f7260b217ba72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaebf984a8f588670134f7260b217ba72">&#9670;&nbsp;</a></span>INTE</h2>
+<a id="a04ff61905bc74ec0de1e125ce99e3655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ff61905bc74ec0de1e125ce99e3655">&#9670;&nbsp;</a></span>INTE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int INTE</td>
+          <td class="memname">uint8_t INTE</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00278">278</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Interruption present. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00301">301</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a63f2dafc43fb5182942f74252407ad26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63f2dafc43fb5182942f74252407ad26">&#9670;&nbsp;</a></span>JE</h2>
+<a id="aba2dc3b42dd8531a17e17de13f30bdcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2dc3b42dd8531a17e17de13f30bdcd">&#9670;&nbsp;</a></span>JE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int JE</td>
+          <td class="memname">uint8_t JE</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00277">277</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>JE/AVER jump instruction exectuted. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00300">300</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a49a2dec3e4c5ea7b47e8ee1c0fd436e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a2dec3e4c5ea7b47e8ee1c0fd436e5">&#9670;&nbsp;</a></span>JS1</h2>
+<a id="affbea2feeac5616d55b118bbad09cae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbea2feeac5616d55b118bbad09cae4">&#9670;&nbsp;</a></span>JS1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int JS1</td>
+          <td class="memname">uint8_t JS1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00275">275</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Console jump condition 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00298">298</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a36719fe5f4715aef85790e331029b994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36719fe5f4715aef85790e331029b994">&#9670;&nbsp;</a></span>JS2</h2>
+<a id="a2155e5e6bdc0c75f2bd9a7cfe74908e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2155e5e6bdc0c75f2bd9a7cfe74908e2">&#9670;&nbsp;</a></span>JS2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int JS2</td>
+          <td class="memname">uint8_t JS2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00276">276</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Console jump condition 2. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00299">299</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +465,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00226">226</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Knot driven by SO or SI. </p>
+<p>Content is stored to SA. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00204">204</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +484,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00227">227</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Knot driven by counting network, or by the UA to store the result of the operation. </p>
+<p>UA may store MSB or LSB depending on the operation. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00210">210</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +503,13 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00225">225</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Knot driven by P0, V1, V2, V4, L1, R1, V3 and L3. </p>
+<p>In addition, the NO knot contains:</p><ul>
+<li>the forcings from program</li>
+<li>the signals of forcing from console (AM switches) </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00199">199</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +525,28 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00269">269</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>The memory of the emulated system. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00312">312</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+
+</div>
+</div>
+<a id="a0650b0b5d0728302f0399057877d3958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0650b0b5d0728302f0399057877d3958">&#9670;&nbsp;</a></span>old_SO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int old_SO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SO at the start of the pulse. </p>
+<p>Used to stop the machine when we do not change state after a cycle, for debuggiong reasons. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00156">156</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -480,23 +562,26 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00205">205</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00161">161</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a4dbb529208cda1466ea675cacad4c1cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dbb529208cda1466ea675cacad4c1cd">&#9670;&nbsp;</a></span>operator_call</h2>
+<a id="a2210811ce8873efffaa6e4d3f738055d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2210811ce8873efffaa6e4d3f738055d">&#9670;&nbsp;</a></span>operator_call</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int operator_call</td>
+          <td class="memname">uint8_t operator_call</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00273">273</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Operator call. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>replace with signal name </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00310">310</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -512,55 +597,61 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00286">286</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00316">316</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a8af7974ab9f1ac472a780134e474ffd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8af7974ab9f1ac472a780134e474ffd2">&#9670;&nbsp;</a></span>PUC1</h2>
+<a id="a14bff169ab33851cdd39f25f02f3b82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14bff169ab33851cdd39f25f02f3b82e">&#9670;&nbsp;</a></span>PUC1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int PUC1</td>
+          <td class="memname">uint8_t PUC1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00279">279</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Channel 1 busy or CPU waiting. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00302">302</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a686fc0f9a8b247915efa4bfb755ed6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a686fc0f9a8b247915efa4bfb755ed6e1">&#9670;&nbsp;</a></span>PUC2</h2>
+<a id="a6039a03fcb1ed2c273513c258f0b46b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6039a03fcb1ed2c273513c258f0b46b0">&#9670;&nbsp;</a></span>PUC2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int PUC2</td>
+          <td class="memname">uint8_t PUC2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00280">280</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Channel 2 busy. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00303">303</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="aaab49f5c8b240da84b483b2f8b87cd26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaab49f5c8b240da84b483b2f8b87cd26">&#9670;&nbsp;</a></span>PUC3</h2>
+<a id="a5a6a606dbbe0d89e9929da6d12fef0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6a606dbbe0d89e9929da6d12fef0b1">&#9670;&nbsp;</a></span>PUC3</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int PUC3</td>
+          <td class="memname">uint8_t PUC3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00281">281</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Channel 3 busy. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00304">304</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +667,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00237">237</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Default operator. </p>
+<p>16-bit register automatically loaded from NO, used to drive the UA (aka ALU) and used to visualize the content of other registers on the operating panel of the console </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00234">234</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +686,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00263">263</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Faults (pp. 139-141) </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00282">282</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +704,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00240">240</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Current function code. </p>
+<p>8-bit register storing the function code of the instruction being executed. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00241">241</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +723,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00260">260</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00296">296</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +739,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00220">220</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Length of the operand. </p>
+<p>16-bit used to store the length of the operands or for information in transit. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00188">188</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +758,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00221">221</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Auxiliary register. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00189">189</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +776,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00222">222</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Length of operands involving channel 3. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00190">190</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +794,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00210">210</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Program addresser. </p>
+<p>The register used to scan the positions of the memory in which the program instructions are recorded. (p.118). </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00169">169</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -704,7 +813,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00218">218</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Photoprint register 8-bit register used to store the photodisc codes. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00180">180</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +831,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00231">231</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Multipurpose 8+1 bit register. </p>
+<p>Stores the read signal from memory (e.g. the result of transfer command MEM). </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00217">217</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -736,7 +850,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00249">249</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Future state configuration. </p>
+<p>Register that drives the MLS and the logic to generate future status configuration </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00264">264</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +869,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00246">246</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Peripheral unit sequencer. </p>
+<p>4-bit sequencer used for data xechange with peripheral units through channel 2 </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00256">256</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +888,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00243">243</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Main sequencer. </p>
+<p>It is used to establish the sequence for all the phases of program loading, fetching (phase alpha), executing (phase beta) </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00249">249</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +907,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00212">212</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Addresser for the first operand. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00171">171</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +925,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00213">213</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Addresser for the second operand. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00172">172</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +943,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00214">214</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Addresser for external instructions using channel 3. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00173">173</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +961,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00215">215</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Addresser for external instructions using channel 2. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00174">174</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -848,71 +979,61 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00234">234</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Default memory addresser. </p>
+<p>16-bit register which is loaded in TO20 from NO, used to address memory for read and write operations. </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00225">225</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="a0588856d80b7ce1fbf435530feed2c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0588856d80b7ce1fbf435530feed2c08">&#9670;&nbsp;</a></span>step_by_step</h2>
+<a id="abc1f404a7705d2eec8e8d12fa2ca7e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1f404a7705d2eec8e8d12fa2ca7e9d">&#9670;&nbsp;</a></span>step_by_step</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int step_by_step</td>
+          <td class="memname">uint8_t step_by_step</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00272">272</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p>Step by step execution. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>replace with signal name </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00309">309</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="aba60f4e3e1311b8cdc6a5276a367e9a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba60f4e3e1311b8cdc6a5276a367e9a2">&#9670;&nbsp;</a></span>ticks</h2>
+<a id="ae0324630f2c7a9c7b22a4e5de1e1a266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0324630f2c7a9c7b22a4e5de1e1a266">&#9670;&nbsp;</a></span>URPE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t ticks</td>
+          <td class="memname">uint8_t URPE</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00199">199</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00306">306</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
-<a id="ad2e720c44868e5d5c939e458a1ff26b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e720c44868e5d5c939e458a1ff26b8">&#9670;&nbsp;</a></span>URPE</h2>
+<a id="ab79c9e6f4358eb7f366dc028840c599d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79c9e6f4358eb7f366dc028840c599d">&#9670;&nbsp;</a></span>URPU</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int URPE</td>
+          <td class="memname">uint8_t URPU</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00283">283</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
-
-</div>
-</div>
-<a id="a0cfdfd1ec65f2bebb75830a9c1473332"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cfdfd1ec65f2bebb75830a9c1473332">&#9670;&nbsp;</a></span>URPU</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int URPU</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00284">284</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00307">307</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>

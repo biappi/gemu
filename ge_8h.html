@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GE-115 Emulator: /home/runner/work/gemu/gemu/ge.h File Reference</title>
+<title>GE-115 Emulator: ge.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,6 +32,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -51,7 +52,7 @@
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">/home/runner/work/gemu/gemu/ge.h File Reference</div>  </div>
+<div class="title">ge.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
@@ -65,6 +66,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__counting__network_1_1cmds.html">ge_counting_network::cmds</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html">ge</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entire state of the emulated system, including registers, memory, peripherals and timings.  <a href="structge.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpulse__event.html">pulse_event</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,6 +75,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:acac8208fe9101dc6e4585600c95bf97f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#acac8208fe9101dc6e4585600c95bf97f">CLOCK_PERIOD</a>&#160;&#160;&#160;14000 /* in usec, interval between <a class="el" href="pulse_8c.html#ab23e0aa729b0fff20bf5e3619056dcb4">pulse</a> lines */</td></tr>
+<tr class="separator:acac8208fe9101dc6e4585600c95bf97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dcf8c45f945dd0c4301a94700f2112c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a2dcf8c45f945dd0c4301a94700f2112c">MEM_SIZE</a>&#160;&#160;&#160;65536</td></tr>
 <tr class="separator:a2dcf8c45f945dd0c4301a94700f2112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321997bbff942d70a04a8da1e704c07c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a321997bbff942d70a04a8da1e704c07c">ENUMERATE_CLOCKS</a></td></tr>
@@ -120,12 +124,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6d8c95145aa404b162e6ea81a85a4efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the emulator.  <a href="ge_8h.html#a6d8c95145aa404b162e6ea81a85a4efc">More...</a><br /></td></tr>
 <tr class="separator:a6d8c95145aa404b162e6ea81a85a4efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a0f32b2788f4daa9d26b9028d69fdf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a0a0f32b2788f4daa9d26b9028d69fdf5">ge_deinit</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
+<tr class="memdesc:a0a0f32b2788f4daa9d26b9028d69fdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the emulator.  <a href="ge_8h.html#a0a0f32b2788f4daa9d26b9028d69fdf5">More...</a><br /></td></tr>
 <tr class="separator:a0a0f32b2788f4daa9d26b9028d69fdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35618476cde0eb1eddfb20e0af752094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a35618476cde0eb1eddfb20e0af752094">ge_run</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
 <tr class="memdesc:a35618476cde0eb1eddfb20e0af752094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the emulator.  <a href="ge_8h.html#a35618476cde0eb1eddfb20e0af752094">More...</a><br /></td></tr>
 <tr class="separator:a35618476cde0eb1eddfb20e0af752094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a64ae595c0f64b3cf51d8d4193a723"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#aa1a64ae595c0f64b3cf51d8d4193a723">ge_run_pulse</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
+<tr class="memdesc:aa1a64ae595c0f64b3cf51d8d4193a723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a single pulse (i.e. a single GE "mastri" clock periods)  <a href="ge_8h.html#aa1a64ae595c0f64b3cf51d8d4193a723">More...</a><br /></td></tr>
+<tr class="separator:aa1a64ae595c0f64b3cf51d8d4193a723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ec5f34d954e002a33806fe58689cc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a37ec5f34d954e002a33806fe58689cc5">ge_run_cycle</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
-<tr class="memdesc:a37ec5f34d954e002a33806fe58689cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a sigle cycle (all GE "mastri" clock periods)  <a href="ge_8h.html#a37ec5f34d954e002a33806fe58689cc5">More...</a><br /></td></tr>
+<tr class="memdesc:a37ec5f34d954e002a33806fe58689cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run all GE "mastri" clock periods until next clock cycle.  <a href="ge_8h.html#a37ec5f34d954e002a33806fe58689cc5">More...</a><br /></td></tr>
 <tr class="separator:a37ec5f34d954e002a33806fe58689cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6200d4aba7d2a22bd703cf46fa9570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a1f6200d4aba7d2a22bd703cf46fa9570">ge_clear</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
 <tr class="memdesc:a1f6200d4aba7d2a22bd703cf46fa9570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate the press of the "clear" button in the console.  <a href="ge_8h.html#a1f6200d4aba7d2a22bd703cf46fa9570">More...</a><br /></td></tr>
@@ -144,6 +152,22 @@ Functions</h2></td></tr>
 <tr class="separator:ad24be10fe84efc6d115dc762ecd18f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acac8208fe9101dc6e4585600c95bf97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac8208fe9101dc6e4585600c95bf97f">&#9670;&nbsp;</a></span>CLOCK_PERIOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLOCK_PERIOD&#160;&#160;&#160;14000 /* in usec, interval between <a class="el" href="pulse_8c.html#ab23e0aa729b0fff20bf5e3619056dcb4">pulse</a> lines */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00006">6</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+
+</div>
+</div>
 <a id="a321997bbff942d70a04a8da1e704c07c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a321997bbff942d70a04a8da1e704c07c">&#9670;&nbsp;</a></span>ENUMERATE_CLOCKS</h2>
 
@@ -176,9 +200,9 @@ Functions</h2></td></tr>
 <div class="line">    X(TI06) \</div>
 <div class="line">    X(TI10) \</div>
 <div class="line">    X(END_OF_STATUS)</div>
-<div class="ttc" id="age_8h_html_a826edd40636cbaa44266b97c8c6a4fa3"><div class="ttname"><a href="ge_8h.html#a826edd40636cbaa44266b97c8c6a4fa3">X</a></div><div class="ttdeci">#define X(name)</div><div class="ttdef"><b>Definition:</b> <a href="ge_8h_source.html#l00032">ge.h:32</a></div></div>
+<div class="ttc" id="age_8h_html_a826edd40636cbaa44266b97c8c6a4fa3"><div class="ttname"><a href="ge_8h.html#a826edd40636cbaa44266b97c8c6a4fa3">X</a></div><div class="ttdeci">#define X(name)</div><div class="ttdef"><b>Definition:</b> <a href="ge_8h_source.html#l00033">ge.h:33</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00008">8</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00009">9</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +218,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00006">6</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00007">7</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +238,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00032">32</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00033">33</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -231,7 +255,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00310">310</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00344">344</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +275,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af761a67e9d7ce9e23381088b6f2ae893a5a9ca6857c49ea169c587d8e1f99b662"></a>ENUMERATE_CLOCKS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00031">31</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00032">32</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +307,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a0053c58e53ca0926e3154dc49e843b8eab3ffdfcbb05afc7cf8b879c711e70b75"></a>RS_FO&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00037">37</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00038">38</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +350,7 @@ Functions</h2></td></tr>
 
 <p>Emulate the press of the "clear" button in the console. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00030">30</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00022">22</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -345,7 +369,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="ge_8c.html#a0a0f32b2788f4daa9d26b9028d69fdf5">ge_deinit()</a> - deinit GE emulator </p>
+
+<p>Deinitialize the emulator. </p>
 
 <p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00185">185</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
@@ -369,7 +394,7 @@ Functions</h2></td></tr>
 
 <p>Initialize the emulator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00019">19</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00013">13</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -407,7 +432,7 @@ Functions</h2></td></tr>
 
 <p>Emulate the press of the "load" button in the console. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00048">48</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00039">39</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -459,8 +484,6 @@ Functions</h2></td></tr>
 
 <p>Run the emulator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00163">163</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
-
 </div>
 </div>
 <a id="a37ec5f34d954e002a33806fe58689cc5"></a>
@@ -479,9 +502,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Run a sigle cycle (all GE "mastri" clock periods) </p>
+<p>Run all GE "mastri" clock periods until next clock cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00116">116</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00169">169</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+
+</div>
+</div>
+<a id="aa1a64ae595c0f64b3cf51d8d4193a723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a64ae595c0f64b3cf51d8d4193a723">&#9670;&nbsp;</a></span>ge_run_pulse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ge_run_pulse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structge.html">ge</a> *&#160;</td>
+          <td class="paramname"><em>ge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run a single pulse (i.e. a single GE "mastri" clock periods) </p>
+
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00124">124</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -503,7 +548,7 @@ Functions</h2></td></tr>
 
 <p>Emulate the press of the "start" button in the console. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00074">74</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00064">64</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -523,7 +568,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00177">177</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00180">180</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
