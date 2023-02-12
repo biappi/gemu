@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GE-115 Emulator: console_socket.h File Reference</title>
+<title>GE-115 Emulator: Knots</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,15 +33,9 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -49,36 +43,55 @@
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">console_socket.h File Reference</div>  </div>
+<div class="title">Knots</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ge_8h_source.html">ge.h</a>&quot;</code><br />
-</div>
-<p><a href="console__socket_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae7b4982022417205e5b17713799b24f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="console__socket_8h.html#ae7b4982022417205e5b17713799b24f5">console_socket_register</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
-<tr class="separator:ae7b4982022417205e5b17713799b24f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49294c38e055542492fcaccbb4ed4bd3"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__knots.html#ga49294c38e055542492fcaccbb4ed4bd3">NA</a> (struct <a class="el" href="structge.html">ge</a> *<a class="el" href="structge.html">ge</a>)</td></tr>
+<tr class="memdesc:ga49294c38e055542492fcaccbb4ed4bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Knot driven by SO or SI.  <a href="group__knots.html#ga49294c38e055542492fcaccbb4ed4bd3">More...</a><br /></td></tr>
+<tr class="separator:ga49294c38e055542492fcaccbb4ed4bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae7b4982022417205e5b17713799b24f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b4982022417205e5b17713799b24f5">&#9670;&nbsp;</a></span>console_socket_register()</h2>
+<a id="ga49294c38e055542492fcaccbb4ed4bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49294c38e055542492fcaccbb4ed4bd3">&#9670;&nbsp;</a></span>NA()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int console_socket_register </td>
+          <td class="memname">static uint8_t NA </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structge.html">ge</a> *&#160;</td>
           <td class="paramname"><em>ge</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="console__socket_8c_source.html#l00073">73</a> of file <a class="el" href="console__socket_8c_source.html">console_socket.c</a>.</p>
+<p>Knot driven by SO or SI. </p>
+<p>Content is stored to SA.</p>
+<p>Driven</p><ul>
+<li>by the SO register when the work cycle has been attributed to the CPU or to channel 1, if the rotary switch is the "central" position (AF326=1)</li>
+<li>by the SI register (less four significant bits) when the cycle has been attributed to channel 2</li>
+</ul>
+<p>Additionally, individual bits might be set</p><ul>
+<li>NA00: forced to 1 when the work cycle is attributed to channel 1 or channel 3</li>
+<li>NA03: forced to 1 when the work cycle has been attributed to the CPU and the rotary switch is not in the "central" position (AF32C = 1))</li>
+</ul>
+<p>Stored in SA register during T010. (cpu fo. 128) </p>
+
+<p class="definition">Definition at line <a class="el" href="signals_8h_source.html#l00124">124</a> of file <a class="el" href="signals_8h_source.html">signals.h</a>.</p>
 
 </div>
 </div>
