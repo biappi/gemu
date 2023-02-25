@@ -70,6 +70,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__knot__no.html">ge_knot_no</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge__knot__ni.html">ge_knot_ni</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structge.html">ge</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entire state of the emulated system, including registers, memory, peripherals and timings.  <a href="structge.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +101,19 @@ Enumerations</h2></td></tr>
 <tr class="memitem:af761a67e9d7ce9e23381088b6f2ae893"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#af761a67e9d7ce9e23381088b6f2ae893">clock</a> { <a class="el" href="ge_8h.html#af761a67e9d7ce9e23381088b6f2ae893a5a9ca6857c49ea169c587d8e1f99b662">ENUMERATE_CLOCKS</a>
  }</td></tr>
 <tr class="separator:af761a67e9d7ce9e23381088b6f2ae893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a7ccd10ef5a117af1fffd533714c19"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19">knot_ni_source</a> { <br />
+&#160;&#160;<a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19a72fc48eee3d2ccb523fd6cbe142a5024">NS_CN1</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19aadec3ce2b57e7c6032e08bd677b824f7">NS_CN2</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19abe28439ad79a3e7d78e0e63bde025815">NS_CN3</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19aaf643866301926bba5c9b95e201895a6">NS_CN4</a>
+, <br />
+&#160;&#160;<a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19a15ff8475ee980bfec8de64c276e2161b">NS_RO1</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19adfe39763e38018d3d9220b3b23ec1737">NS_RO2</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19a4942b79a6fa55de5c1b4be88ba969fe0">NS_UA2</a>
+, <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19a3d4c1733c39b57ab9a072d570a7711d9">NS_UA1</a>
+<br />
+ }</td></tr>
+<tr class="separator:a33a7ccd10ef5a117af1fffd533714c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -178,6 +193,7 @@ Functions</h2></td></tr>
 <div class="line">    X(TO30) \</div>
 <div class="line">    X(TO40) \</div>
 <div class="line">    X(TO50) \</div>
+<div class="line">    X(TO50_1) \</div>
 <div class="line">    X(TO60) \</div>
 <div class="line">    X(TO64) \</div>
 <div class="line">    X(TO65) \</div>
@@ -189,7 +205,7 @@ Functions</h2></td></tr>
 <div class="line">    X(TI06) \</div>
 <div class="line">    X(TI10) \</div>
 <div class="line">    X(END_OF_STATUS)</div>
-<div class="ttc" id="age_8h_html_a826edd40636cbaa44266b97c8c6a4fa3"><div class="ttname"><a href="ge_8h.html#a826edd40636cbaa44266b97c8c6a4fa3">X</a></div><div class="ttdeci">#define X(name)</div><div class="ttdef"><b>Definition:</b> <a href="ge_8h_source.html#l00035">ge.h:35</a></div></div>
+<div class="ttc" id="age_8h_html_a826edd40636cbaa44266b97c8c6a4fa3"><div class="ttname"><a href="ge_8h.html#a826edd40636cbaa44266b97c8c6a4fa3">X</a></div><div class="ttdeci">#define X(name)</div><div class="ttdef"><b>Definition:</b> <a href="ge_8h_source.html#l00036">ge.h:36</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00011">11</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
@@ -227,7 +243,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00035">35</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00036">36</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +260,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00487">487</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00528">528</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +280,33 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af761a67e9d7ce9e23381088b6f2ae893a5a9ca6857c49ea169c587d8e1f99b662"></a>ENUMERATE_CLOCKS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00034">34</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00035">35</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
+
+</div>
+</div>
+<a id="a33a7ccd10ef5a117af1fffd533714c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a7ccd10ef5a117af1fffd533714c19">&#9670;&nbsp;</a></span>knot_ni_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ge_8h.html#a33a7ccd10ef5a117af1fffd533714c19">knot_ni_source</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19a72fc48eee3d2ccb523fd6cbe142a5024"></a>NS_CN1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19aadec3ce2b57e7c6032e08bd677b824f7"></a>NS_CN2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19abe28439ad79a3e7d78e0e63bde025815"></a>NS_CN3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19aaf643866301926bba5c9b95e201895a6"></a>NS_CN4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19a15ff8475ee980bfec8de64c276e2161b"></a>NS_RO1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19adfe39763e38018d3d9220b3b23ec1737"></a>NS_RO2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19a4942b79a6fa55de5c1b4be88ba969fe0"></a>NS_UA2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33a7ccd10ef5a117af1fffd533714c19a3d4c1733c39b57ab9a072d570a7711d9"></a>NS_UA1&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="ge_8h_source.html#l00066">66</a> of file <a class="el" href="ge_8h_source.html">ge.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +330,7 @@ Functions</h2></td></tr>
 <p>Commit the future state. </p>
 <p>Transfers the results of the future state network in the various selectors. For now it's an ad hoc behaviour, not described in detail in the currently available docs. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00209">209</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00211">211</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -355,7 +397,7 @@ Functions</h2></td></tr>
 
 <p>Deinitialize the emulator. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00203">203</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00205">205</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -509,7 +551,7 @@ Functions</h2></td></tr>
 
 <p>Run all GE "mastri" clock periods until next clock cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00192">192</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00194">194</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -531,7 +573,7 @@ Functions</h2></td></tr>
 
 <p>Run a single pulse (i.e. a single GE "mastri" clock periods) </p>
 
-<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00148">148</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ge_8c_source.html#l00150">150</a> of file <a class="el" href="ge_8c_source.html">ge.c</a>.</p>
 
 </div>
 </div>
@@ -573,7 +615,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pulse_8c_source.html#l00112">112</a> of file <a class="el" href="pulse_8c_source.html">pulse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pulse_8c_source.html#l00152">152</a> of file <a class="el" href="pulse_8c_source.html">pulse.c</a>.</p>
 
 </div>
 </div>
