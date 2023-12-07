@@ -69,6 +69,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab636ffdbb7f4870608a14ac4d7b75097"><td class="memItemLeft" align="right" valign="top">uint8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmsl__timing__chart.html#ab636ffdbb7f4870608a14ac4d7b75097">condition</a> )(struct <a class="el" href="structge.html">ge</a> *)</td></tr>
 <tr class="memdesc:ab636ffdbb7f4870608a14ac4d7b75097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition for the command.  <a href="structmsl__timing__chart.html#ab636ffdbb7f4870608a14ac4d7b75097">More...</a><br /></td></tr>
 <tr class="separator:ab636ffdbb7f4870608a14ac4d7b75097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49d809430c58f01e4c0f4c8b51859cf"><td class="memItemLeft" align="right" valign="top">uint8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmsl__timing__chart.html#ab49d809430c58f01e4c0f4c8b51859cf">additional</a> )(struct <a class="el" href="structge.html">ge</a> *)</td></tr>
+<tr class="memdesc:ab49d809430c58f01e4c0f4c8b51859cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional condition for the command.  <a href="structmsl__timing__chart.html#ab49d809430c58f01e4c0f4c8b51859cf">More...</a><br /></td></tr>
+<tr class="separator:ab49d809430c58f01e4c0f4c8b51859cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Timing chart row. </p>
@@ -76,6 +79,26 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="msl-timings_8h_source.html#l00013">13</a> of file <a class="el" href="msl-timings_8h_source.html">msl-timings.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="ab49d809430c58f01e4c0f4c8b51859cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49d809430c58f01e4c0f4c8b51859cf">&#9670;&nbsp;</a></span>additional</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t(* additional) (struct <a class="el" href="structge.html">ge</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Additional condition for the command. </p>
+<p>In the GE timing charts, this is the equation in parens.</p>
+<p>If NULL, only <code>condition</code> is evaluated, otherwise the commmand will be executed if both <code>condition</code> and <code>additional</code> return true. </p>
+
+<p class="definition">Definition at line <a class="el" href="msl-timings_8h_source.html#l00042">42</a> of file <a class="el" href="msl-timings_8h_source.html">msl-timings.h</a>.</p>
+
+</div>
+</div>
 <a id="aedbd752ca44cce61735959dd392b9e61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedbd752ca44cce61735959dd392b9e61">&#9670;&nbsp;</a></span>clock</h2>
 
@@ -125,9 +148,10 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Condition for the command. </p>
+<p>In the GE timing charts, this is the equation in curly brackets.</p>
 <p>If NULL, the command will always be executed, otherwise the command will get executed only if the condition returns true. </p>
 
-<p class="definition">Definition at line <a class="el" href="msl-timings_8h_source.html#l00027">27</a> of file <a class="el" href="msl-timings_8h_source.html">msl-timings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="msl-timings_8h_source.html#l00030">30</a> of file <a class="el" href="msl-timings_8h_source.html">msl-timings.h</a>.</p>
 
 </div>
 </div>
